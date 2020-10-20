@@ -1,0 +1,101 @@
+
+.main_page
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+
+  .left_block
+    display: flex
+    text-align: center
+    height: 100vh
+    justify-content: space-between
+    flex-direction: column
+    width: 12%
+    min-width: 78px
+    font-weight: 600
+    font-size: 1.2em
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 2
+    div
+      padding: 1em
+
+  .right_block //  сделать наследование
+    display: flex
+    text-align: center
+    height: 100vh
+    justify-content: space-between
+    flex-direction: column
+    width: 12%
+    min-width: 78px
+    font-weight: 600
+    font-size: 1.2em
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 2
+    div
+      padding-top: 1em
+      padding-bottom: 1em
+  .content
+    padding: 12vh
+    width: 76%
+    font-size: 1.1em
+
+  .content_block
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-items: center
+    .picture_item
+      position: relative
+      min-width: 150px
+      min-height: 150px
+      .picture
+        margin: 25px
+        cursor: pointer
+        width: 150px
+        height: 150px
+        transition: all 1s
+      .picture:hover
+        margin: 0
+        width: 200px
+        height: 200px
+
+    .albums_item
+      padding: 1em
+      font-weight: 500
+      text-align: center
+      position: relative
+      a
+        cursor: pointer
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+
+      a:hover
+        text-decoration: underline
+
+  .content_block:after
+    content: ''
+    display: block
+    height: 12vh
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    background: linear-gradient(#ffffff, #9198e500)
+  .content_block:before
+    content: ''
+    display: block
+    height: 12vh
+    left: 0
+    position: fixed
+    bottom: 0
+    width: 100%
+    background: linear-gradient(#9198e500, #ffffff)
+
+      
